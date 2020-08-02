@@ -72,6 +72,14 @@ namespace Arithmetic_Coding
             Console.WriteLine(Lvalue[i]);
             Console.WriteLine(Hvalue[i]);
         }
+        
+        
+   //*******************************************************************************************************************************************************************************************     
+                                                   			 //The Part form here decodes the above obtained encoded message.
+   //*****************************************************************************************************************************************************************************************    
+        
+        
+        
         double TAG = ((Lvalue[Message.Length]+ Hvalue[Message.Length])/2);
         //Console.WriteLine(TAG);
         double decode = TAG;
