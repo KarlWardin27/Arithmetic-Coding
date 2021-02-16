@@ -1,3 +1,6 @@
+#Developed By   
+#Prathamesh Pokhare
+
 def main():
     l1 = list(input("Enter your Message to be Encoded:- "))
     l2 = list(dict.fromkeys(l1))
@@ -20,7 +23,7 @@ def main():
                 temp = temp + 1
         prob.append(temp/len(l1))
         ran.append(ran[x]+prob[x])
-    print("The Probabilites for each alphabet")
+    print("The Probabilites for each alphabet :- ")
     print(prob)
 
     #Generation of TAG
@@ -33,10 +36,11 @@ def main():
             H = L+((H-L)*ran[l2.index(l1[x])+1])
             L=temp
     print('TAG = '+ str((H+L)/2))
+    print("\n")
     TAG = (H+L)/2
 
     #Decoding Algorithm
-    print("############ Decoding the encoded message with length of the Message, probability of each alphabet and TAG Generated ###########")
+    print("\n############ Decoding the encoded message with length of the Message, probability of each alphabet and TAG Generated ###########")
     OPstr = ""
     temp = 0 
     for x in range(len(l1)):

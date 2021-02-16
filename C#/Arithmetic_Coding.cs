@@ -1,3 +1,6 @@
+//Developed By
+//Prathamesh Pokhare
+
 using System;
 using System.Linq;
 namespace Arithmetic_Coding
